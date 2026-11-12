@@ -24,7 +24,7 @@ Projelerimin büyük çoğunluğu **mobil uygulama geliştirme** üzerine. Yayı
 
 | Alan | Projeler | |
 | --- | --- | --- |
-| 📱 **Mobil Uygulama** (Flutter, React Native) | Çeşnicibaşı · Sumera Pomodoro · Hangi Yağ? | 🟩🟩🟩🟩🟩 |
+| 📱 **Mobil Uygulama & Oyun** (Flutter, React Native) | Ferman · Çeşnicibaşı · Sumera Pomodoro · Hangi Yağ? | 🟩🟩🟩🟩🟩 |
 | 🌐 **Web & Yönetim Paneli** (PHP, Symfony) | EgzozGross · Workiva · dictionary_project | 🟩🟩🟩🟩⬜ |
 | 🖥️ **Masaüstü** (C#, WinForms) | KanBaS · Visual Programming | 🟩🟩⬜⬜⬜ |
 | 🎓 **Bilgisayar Mühendisliği temelleri** | C, Veri Yapıları, Java, Assembly, MATLAB görüntü işleme | 🟩🟩⬜⬜⬜ |
@@ -38,11 +38,41 @@ Projelerimin büyük çoğunluğu **mobil uygulama geliştirme** üzerine. Yayı
   <a href="https://hangiyag.com.tr/"><img src="https://img.shields.io/badge/hangiyag.com.tr-Canl%C4%B1%20site-16a34a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="hangiyag.com.tr" /></a>
   <a href="https://suedatekin.github.io/cesnicibasi/"><img src="https://img.shields.io/badge/%C3%87e%C5%9Fniciba%C5%9F%C4%B1-Web%20sayfas%C4%B1-1b5e3b?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Çeşnicibaşı" /></a>
   <a href="https://github.com/SuedaTekin/Sumera_Pomodoro/releases/latest"><img src="https://img.shields.io/badge/Sumera%20Pomodoro-APK%20indir-6d4aff?style=for-the-badge&logo=android&logoColor=white" alt="Sumera Pomodoro" /></a>
+  <a href="https://github.com/SuedaTekin/ferman-krallik-kararlari/releases/latest"><img src="https://img.shields.io/badge/Ferman-APK%20indir-F39C12?style=for-the-badge&logo=android&logoColor=white" alt="Ferman" /></a>
 </p>
 
 ---
 
 ## 🚀 Öne Çıkan Projeler
+
+### 👑 [Ferman: Krallık Kararları](https://github.com/SuedaTekin/ferman-krallik-kararlari) — Orta çağ strateji oyunu
+
+<p align="center">
+  <a href="https://github.com/SuedaTekin/ferman-krallik-kararlari"><img src="assets/ferman-banner.png" width="720" alt="Ferman: Krallık Kararları" /></a>
+</p>
+
+<img src="assets/ferman-1.png" width="200" align="right" alt="Ferman oyun ekranı" />
+
+Krallığını kurduğun, ordunu eğittiğin ve **verdiğin kararların gerçekten önemli olduğu** bir mobil strateji oyunu.
+
+- 📜 **Kraliyet Kararları:** her birkaç saatte bir gelen ikilemler, **Halk Memnuniyeti**ni ve tüm üretimi (%80–%120) etkiler
+- 🐪 **Kervan Pazarı:** saat saat dalgalanan fiyatlar, 24 saatlik grafik, al-sat stratejisi
+- ⚔️ Süreli eğitim kuyruğu, seviye atlayan komutan, 30 aşamalı sefer ve **animasyonlu savaş sahneleri**
+- 🧭 Yeni oyuncu için adım adım **danışman rehberi**, 🔔 yerel bildirimler
+- 💰 **AdMob** ödüllü reklamlar, **Google Play Billing**, aylık **Kraliyet Bileti** (battle pass)
+- 🎨 Google Stitch ile tasarlanan "Royal Dominion" tasarım sistemi; Play Store'a hazır paket, mağaza görselleri ve gizlilik politikası
+
+<br clear="right" />
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/AdMob-EA4335?logo=googleadmob&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google%20Play%20Billing-414141?logo=googleplay&logoColor=white" />
+  <a href="https://github.com/SuedaTekin/ferman-krallik-kararlari/releases/latest"><img src="https://img.shields.io/github/v/release/SuedaTekin/ferman-krallik-kararlari?label=APK%20indir&color=F39C12" /></a>
+</p>
+
+---
 
 ### 🍲 Çeşnicibaşı — Yapay zekâ destekli mutfak asistanı
 
