@@ -17,6 +17,31 @@
 
 ---
 
+## 🎯 Odak Alanım
+
+Projelerimin büyük çoğunluğu **mobil uygulama geliştirme** üzerine. Yayına hazır uygulamalarımın yanında
+**PHP/Symfony ile web geliştirme** ikinci ana alanım.
+
+| Alan | Projeler | |
+| --- | --- | --- |
+| 📱 **Mobil Uygulama** (Flutter, React Native) | Çeşnicibaşı · Sumera Pomodoro · Hangi Yağ? | 🟩🟩🟩🟩🟩 |
+| 🌐 **Web & Yönetim Paneli** (PHP, Symfony) | EgzozGross · Workiva · dictionary_project | 🟩🟩🟩🟩⬜ |
+| 🖥️ **Masaüstü** (C#, WinForms) | KanBaS · Visual Programming | 🟩🟩⬜⬜⬜ |
+| 🎓 **Bilgisayar Mühendisliği temelleri** | C, Veri Yapıları, Java, Assembly, MATLAB görüntü işleme | 🟩🟩⬜⬜⬜ |
+
+---
+
+## 🌍 Yayındaki Projeler
+
+<p align="center">
+  <a href="https://egzozgross.com/"><img src="https://img.shields.io/badge/egzozgross.com-Canl%C4%B1%20site-1f8a3c?style=for-the-badge&logo=googlechrome&logoColor=white" alt="egzozgross.com" /></a>
+  <a href="https://hangiyag.com.tr/"><img src="https://img.shields.io/badge/hangiyag.com.tr-Canl%C4%B1%20site-16a34a?style=for-the-badge&logo=googlechrome&logoColor=white" alt="hangiyag.com.tr" /></a>
+  <a href="https://suedatekin.github.io/cesnicibasi/"><img src="https://img.shields.io/badge/%C3%87e%C5%9Fniciba%C5%9F%C4%B1-Web%20sayfas%C4%B1-1b5e3b?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Çeşnicibaşı" /></a>
+  <a href="https://github.com/SuedaTekin/Sumera_Pomodoro/releases/latest"><img src="https://img.shields.io/badge/Sumera%20Pomodoro-APK%20indir-6d4aff?style=for-the-badge&logo=android&logoColor=white" alt="Sumera Pomodoro" /></a>
+</p>
+
+---
+
 ## 🚀 Öne Çıkan Projeler
 
 ### 🍲 Çeşnicibaşı — Yapay zekâ destekli mutfak asistanı
@@ -79,11 +104,12 @@ Her pomodoroda kişisel gökyüzüne bir yıldız ekleyen, oyunlaştırılmış 
 
 ---
 
-### 🛢️ Hangi Yağ? — Motor yağı sorgulama uygulaması
+### 🛢️ [Hangi Yağ?](https://hangiyag.com.tr/) — Motor yağı sorgulama uygulaması
 
 <img src="assets/hangiyag-icon.png" width="72" align="right" alt="Hangi Yağ?" />
 
-Aracın marka, model ve yılına göre doğru motor yağını bulan [hangiyag.com.tr](https://hangiyag.com.tr) için Android ve iOS uygulaması.
+Aracın marka, model ve yılına göre doğru motor yağını bulan [hangiyag.com.tr](https://hangiyag.com.tr/) için Android ve iOS uygulaması.
+250+ marka ve 165.000+ araç varyantı, şasi numarasıyla sorgu ve muadil yağ karşılaştırması.
 
 - 📱 **Expo + React Native** ile tek kod tabanından Android ve iOS
 - 🔗 Site içi / harici link yönetimi, Android geri tuşu, çekip yenileme, çevrimdışı ekranı
@@ -99,7 +125,40 @@ Aracın marka, model ve yılına göre doğru motor yağını bulan [hangiyag.co
   <img src="https://img.shields.io/badge/React%20Native-20232A?logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=white" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white" />
-  <a href="https://hangiyag.com.tr"><img src="https://img.shields.io/badge/hangiyag.com.tr-%E2%86%92-16a34a" /></a>
+  <a href="https://hangiyag.com.tr/"><img src="https://img.shields.io/badge/hangiyag.com.tr-%E2%86%92-16a34a" /></a>
+</p>
+
+---
+
+### 🚗 [EgzozGross](https://egzozgross.com/) — Toptan egzoz parçaları web sitesi ve yönetim paneli
+
+<p align="center">
+  <a href="https://egzozgross.com/"><img src="assets/egzozgross-desktop.png" width="720" alt="EgzozGross" /></a>
+</p>
+
+ADP Group için katalitik konvektör, egzoz spirali, universal katalizör, seramik iç petek ve egzoz macunu
+toptan satışı yapan kurumsal ürün kataloğu sitesi.
+
+- 🗂️ Kategori, ürün ve çoklu ürün görseli yönetimi; Euro normu filtreleri, ürün kodu / araç ile arama
+- 🛠️ **EasyAdmin** ile yönetim paneli: ürünler, kategoriler, ana sayfa içerikleri, site ayarları, kullanıcılar
+- 📈 Günlük ziyaret istatistikleri
+- 🌍 4 dil: Türkçe, İngilizce, Rusça, Arapça (sağdan sola)
+- 💬 WhatsApp ile sipariş / fiyat sorma
+- 🚀 Nginx + PHP-FPM sunucu yapılandırması ve yayın süreci
+
+<p align="center">
+  <img src="assets/egzozgross-2.png" width="200" />
+  <img src="assets/egzozgross-3.png" width="200" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP%208-777BB4?logo=php&logoColor=white" />
+  <img src="https://img.shields.io/badge/Symfony%207-000000?logo=symfony&logoColor=white" />
+  <img src="https://img.shields.io/badge/Doctrine-FC6A31?logo=doctrine&logoColor=white" />
+  <img src="https://img.shields.io/badge/EasyAdmin-4B3FBF" />
+  <img src="https://img.shields.io/badge/Twig-bacf29?logo=symfony&logoColor=black" />
+  <img src="https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white" />
+  <a href="https://egzozgross.com/"><img src="https://img.shields.io/badge/egzozgross.com-%E2%86%92-1f8a3c" /></a>
 </p>
 
 ---
@@ -150,6 +209,7 @@ Aracın marka, model ve yılına göre doğru motor yağını bulan [hangiyag.co
   <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" />
   <img src="https://img.shields.io/badge/Gemini-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white" />
 </p>
 
 **Diğer Diller & Araçlar**
