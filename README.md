@@ -101,6 +101,7 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
   <img src="assets/balonpatlat-2.png" width="200" />
   <img src="assets/balonpatlat-3.png" width="200" />
   <img src="assets/balonpatlat-4.png" width="200" />
+  <img src="assets/balonpatlat-5.png" width="200" />
 </p>
 
 <p align="center">
