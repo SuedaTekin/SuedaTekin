@@ -88,7 +88,8 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
 - 🎯 Fizik tabanlı atış ve duvar sekmesi, **hedef göstergeli nişan**, kombo zinciri, 3 yıldız sistemi; **taş balonlar**, ZOR ve ÇOK ZOR bölümler
 - ✨ Çarpışmada esneyen komşular, uçuşan puan yazıları, bölüm giriş animasyonu, nabız atan tehlike uyarısı
 - 🤖 Zorluk eğrisi, her bölümü oynayan bir **bot testiyle** dengelendi
-- 💥 4 güçlendirici: Gökkuşağı, Ateş Topu, Lazer, +5 Hamle
+- 💥 4 güçlendirici, bölüm öncesi **başlangıç güçlendiricileri** ve zincirleme patlayan **bomba balonlar**
+- 🎟️ **Bubble Pass**: aylık sezon, 30 kademe, ücretsiz ve Altın Bilet ödül yolları
 - 👥 **Supabase** ile misafir/e-posta hesabı, bulut kayıt, **haftalık lig**, arkadaşlar ve **takımlar** (canlı sohbet, can isteme, haftalık sandık)
 - 🎁 Can sistemi, günlük şans çarkı, 7 günlük giriş serisi, günlük görevler
 - 🔊 Program ile sentezlenmiş, telifsiz ses efektleri ve müzik
@@ -112,7 +113,7 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
   <img src="https://img.shields.io/badge/AdMob-EA4335?logo=googleadmob&logoColor=white" />
   <img src="https://img.shields.io/badge/Google%20Play%20Billing-414141?logo=googleplay&logoColor=white" />
   <a href="https://github.com/SuedaTekin/balon-patlat"><img src="https://img.shields.io/badge/Kaynak%20kod-GitHub-181717?logo=github&logoColor=white" /></a>
-  <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="https://img.shields.io/badge/APK%20indir-1.4.0-FF4E7C?logo=android&logoColor=white" /></a>
+  <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="https://img.shields.io/badge/APK%20indir-1.5.0-FF4E7C?logo=android&logoColor=white" /></a>
 </p>
 
 ---
