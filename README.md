@@ -75,7 +75,7 @@ Krallığını kurduğun, ordunu eğittiğin ve **verdiğin kararların gerçekt
 
 ---
 
-### 🎈 [Balon Patlat](https://suedatekin.github.io/balon-patlat-gizlilik/indir/) — Bubble shooter bulmaca oyunu
+### 🎈 [Balon Patlat](https://github.com/SuedaTekin/balon-patlat) — Bubble shooter bulmaca oyunu
 
 <p align="center">
   <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="assets/balonpatlat-banner.png" width="720" alt="Balon Patlat" /></a>
@@ -109,6 +109,8 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
   <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white" />
   <img src="https://img.shields.io/badge/AdMob-EA4335?logo=googleadmob&logoColor=white" />
   <img src="https://img.shields.io/badge/Google%20Play%20Billing-414141?logo=googleplay&logoColor=white" />
+  <a href="https://github.com/SuedaTekin/balon-patlat"><img src="https://img.shields.io/badge/Kaynak%20kod-GitHub-181717?logo=github&logoColor=white" /></a>
+  <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="https://img.shields.io/badge/APK%20indir-1.3.1-FF4E7C?logo=android&logoColor=white" /></a>
 </p>
 
 ---
