@@ -24,7 +24,7 @@ Projelerimin büyük çoğunluğu **mobil uygulama geliştirme** üzerine. Yayı
 
 | Alan | Projeler | |
 | --- | --- | --- |
-| 📱 **Mobil Uygulama & Oyun** (Flutter, React Native) | Ferman · Çeşnicibaşı · Sumera Pomodoro · Hangi Yağ? | 🟩🟩🟩🟩🟩 |
+| 📱 **Mobil Uygulama & Oyun** (Flutter, React Native) | Ferman · Balon Patlat · Çeşnicibaşı · Sumera Pomodoro · Hangi Yağ? | 🟩🟩🟩🟩🟩 |
 | 🌐 **Web & Yönetim Paneli** (PHP, Symfony) | EgzozGross · Workiva · dictionary_project | 🟩🟩🟩🟩⬜ |
 | 🖥️ **Masaüstü** (C#, WinForms) | KanBaS · Visual Programming | 🟩🟩⬜⬜⬜ |
 | 🎓 **Bilgisayar Mühendisliği temelleri** | C, Veri Yapıları, Java, Assembly, MATLAB görüntü işleme | 🟩🟩⬜⬜⬜ |
@@ -70,6 +70,42 @@ Krallığını kurduğun, ordunu eğittiğin ve **verdiğin kararların gerçekt
   <img src="https://img.shields.io/badge/AdMob-EA4335?logo=googleadmob&logoColor=white" />
   <img src="https://img.shields.io/badge/Google%20Play%20Billing-414141?logo=googleplay&logoColor=white" />
   <a href="https://github.com/SuedaTekin/ferman-krallik-kararlari/releases/latest"><img src="https://img.shields.io/github/v/release/SuedaTekin/ferman-krallik-kararlari?label=APK%20indir&color=F39C12" /></a>
+</p>
+
+---
+
+### 🎈 Balon Patlat — Bubble shooter bulmaca oyunu
+
+<p align="center">
+  <img src="assets/balonpatlat-banner.png" width="720" alt="Balon Patlat" />
+</p>
+
+<img src="assets/balonpatlat-icon.png" width="72" align="right" alt="Balon Patlat ikonu" />
+
+Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm**, ilerledikçe zorlaşan bir bubble shooter.
+
+- 🎯 Fizik tabanlı atış ve duvar sekmesi, kombo zinciri, 3 yıldız sistemi; **taş balonlar**, ZOR ve ÇOK ZOR bölümler
+- 🤖 Zorluk eğrisi, her bölümü oynayan bir **bot testiyle** dengelendi
+- 💥 4 güçlendirici: Gökkuşağı, Ateş Topu, Lazer, +5 Hamle
+- 👥 **Supabase** ile misafir/e-posta hesabı, bulut kayıt, **haftalık lig**, arkadaşlar ve **takımlar** (canlı sohbet, can isteme, haftalık sandık)
+- 🎁 Can sistemi, günlük şans çarkı, 7 günlük giriş serisi, günlük görevler
+- 🔊 Program ile sentezlenmiş, telifsiz ses efektleri ve müzik
+- 💰 **AdMob** ödüllü reklamlar, **Google Play Billing**; hesap silme, gizlilik politikası ve Play Store'a hazır paket
+- 🎨 Google Stitch ile tasarlanan "Luminous Pop" arayüzü
+
+<br clear="right" />
+
+<p align="center">
+  <img src="assets/balonpatlat-1.png" width="200" />
+  <img src="assets/balonpatlat-2.png" width="200" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white" />
+  <img src="https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white" />
+  <img src="https://img.shields.io/badge/AdMob-EA4335?logo=googleadmob&logoColor=white" />
+  <img src="https://img.shields.io/badge/Google%20Play%20Billing-414141?logo=googleplay&logoColor=white" />
 </p>
 
 ---
