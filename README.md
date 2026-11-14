@@ -39,6 +39,7 @@ Projelerimin büyük çoğunluğu **mobil uygulama geliştirme** üzerine. Yayı
   <a href="https://suedatekin.github.io/cesnicibasi/"><img src="https://img.shields.io/badge/%C3%87e%C5%9Fniciba%C5%9F%C4%B1-Web%20sayfas%C4%B1-1b5e3b?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Çeşnicibaşı" /></a>
   <a href="https://github.com/SuedaTekin/Sumera_Pomodoro/releases/latest"><img src="https://img.shields.io/badge/Sumera%20Pomodoro-APK%20indir-6d4aff?style=for-the-badge&logo=android&logoColor=white" alt="Sumera Pomodoro" /></a>
   <a href="https://github.com/SuedaTekin/ferman-krallik-kararlari/releases/latest"><img src="https://img.shields.io/badge/Ferman-APK%20indir-F39C12?style=for-the-badge&logo=android&logoColor=white" alt="Ferman" /></a>
+  <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="https://img.shields.io/badge/Balon%20Patlat-APK%20indir-FF4E7C?style=for-the-badge&logo=android&logoColor=white" alt="Balon Patlat" /></a>
 </p>
 
 ---
@@ -74,10 +75,10 @@ Krallığını kurduğun, ordunu eğittiğin ve **verdiğin kararların gerçekt
 
 ---
 
-### 🎈 Balon Patlat — Bubble shooter bulmaca oyunu
+### 🎈 [Balon Patlat](https://suedatekin.github.io/balon-patlat-gizlilik/indir/) — Bubble shooter bulmaca oyunu
 
 <p align="center">
-  <img src="assets/balonpatlat-banner.png" width="720" alt="Balon Patlat" />
+  <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="assets/balonpatlat-banner.png" width="720" alt="Balon Patlat" /></a>
 </p>
 
 <img src="assets/balonpatlat-icon.png" width="72" align="right" alt="Balon Patlat ikonu" />
@@ -98,6 +99,7 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
 <p align="center">
   <img src="assets/balonpatlat-1.png" width="200" />
   <img src="assets/balonpatlat-2.png" width="200" />
+  <img src="assets/balonpatlat-3.png" width="200" />
 </p>
 
 <p align="center">
