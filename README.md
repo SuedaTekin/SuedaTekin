@@ -103,7 +103,6 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
 <p align="center">
   <img src="assets/balonpatlat-6.png" width="200" />
   <img src="assets/balonpatlat-2.png" width="200" />
-  <img src="assets/balonpatlat-3.png" width="200" />
   <img src="assets/balonpatlat-4.png" width="200" />
   <img src="assets/balonpatlat-5.png" width="200" />
 </p>
@@ -308,6 +307,16 @@ toptan satışı yapan kurumsal ürün kataloğu sitesi.
 - **Yayından sonra da yönetilebilir uygulamalar:** uzaktan ayar dosyaları ile mağaza onayı beklemeden içerik ve özellik güncelleme
 - **Çevrimdışı öncelikli** veri yapısı ve gizliliğe saygılı tasarım
 - **Çok dilli** arayüzler (Türkçe, İngilizce, Almanca, Arapça, İspanyolca, Fransızca, Portekizce)
+
+---
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/output/github-snake.svg" />
+    <img alt="Katkı yılanı" src="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/output/github-snake-dark.svg" />
+  </picture>
+</p>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=SuedaTekin&label=Profil%20g%C3%B6r%C3%BCnt%C3%BClenme&color=1b5e3b&style=flat" alt="Profil görüntülenme" />
