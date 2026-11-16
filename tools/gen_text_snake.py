@@ -1,4 +1,4 @@
-"""Profil için piksel şekilli (balon, kalp, kumanda) katkı grafiği + yılan animasyonu.
+"""Profil için yıldızlı katkı grafiği + yılan animasyonu.
 
 GitHub'ın katkı grafiğine benzeyen bir ızgarada yazı yeşil kutucuklarla
 çizilir; mor yılan ızgarayı sırayla dolaşıp kutucukları yer, sonra döngü
@@ -15,51 +15,38 @@ COLS, ROWS = 45, 18
 LINES = [("SUEDA", 1), ("TEKİN", 9)]
 
 # Yazı yerine çizilen piksel şekiller (soldan sağa, dikeyde ortalanır).
-SHAPES = [
-    [  # balon
-        "...#####...",
-        "..#######..",
-        ".#########.",
-        ".#++######.",
-        "###########",
-        "###########",
-        "###########",
-        ".#########.",
-        ".#########.",
-        "..#######..",
-        "...#####...",
-        "....###....",
-        ".....#.....",
-        "......#....",
-        ".....#.....",
-    ],
-    [  # kalp
-        ".###...###.",
-        "#++##.#####",
-        "#+#########",
-        "###########",
-        "###########",
-        ".#########.",
-        "..#######..",
-        "...#####...",
-        "....###....",
-        ".....#.....",
-    ],
-    [  # oyun kumandası
-        "..#########..",
-        ".###########.",
-        "##.######.###",
-        "#...####.#.##",
-        "##.######.###",
-        "#############",
-        "####.....####",
-        ".##.......##.",
-    ],
+_MID_STAR = [
+    "....#....",
+    "...###...",
+    "...#+#...",
+    "#########",
+    ".###+###.",
+    "..#####..",
+    "..##.##..",
+    ".##...##.",
+    "##.....##",
 ]
-SHAPE_GAP = 3
+_BIG_STAR = [
+    "......#......",
+    ".....###.....",
+    ".....#+#.....",
+    "....##+##....",
+    "#####+++#####",
+    ".####+++####.",
+    "..##+++++##..",
+    "...#######...",
+    "...#######...",
+    "..####.####..",
+    "..###...###..",
+    ".##.......##.",
+]
+SHAPES = [_MID_STAR, _BIG_STAR, _MID_STAR]
+SHAPE_GAP = 5
+# şekiller de yıldızsa sarı çizilir ('+' = parlak iç kısım)
+SHAPES_ARE_STARS = True
 
 # Şekillerin arasına serpilen küçük yıldızlar: (artı biçimli, tek nokta) sayısı
-STARS = (11, 9)
+STARS = (14, 12)
 
 
 def star_cells(occupied):
@@ -126,6 +113,8 @@ THEMES = {
         "shine": "#aff5b4",
         "star": "#f8e3a1",
         "star_arm": "#d29922",
+        "big_star": ["#e3b341", "#d29922", "#f0c14b"],
+        "big_shine": "#fff1b8",
     },
     "light": {
         "empty": "#ebedf0",
@@ -136,6 +125,8 @@ THEMES = {
         "shine": "#7ee28f",
         "star": "#d4a72c",
         "star_arm": "#eac54f",
+        "big_star": ["#d4a72c", "#bf8700", "#e0b42f"],
+        "big_shine": "#f5dc7a",
     },
 }
 
@@ -212,6 +203,7 @@ def build(theme_name):
         f'width="{w + 4}" height="{h + 4}">',
         "<style>",
         "@keyframes tw{0%,100%{opacity:1}50%{opacity:.35}}",
+        "@keyframes glow{0%,100%{opacity:1}50%{opacity:.7}}",
     ]
     rects = []
     for r in range(ROWS):
@@ -221,9 +213,13 @@ def build(theme_name):
                 i = index[(r, c)]
                 p = 100 * i * STEP / total
                 col = rnd.choice(t["text"])
-                if (r, c) in shine:
-                    col = t["shine"]
                 twinkle = ""
+                if SHAPES and SHAPES_ARE_STARS and (r, c) not in stars:
+                    col = rnd.choice(t["big_star"])
+                    # büyük yıldızlar hep birlikte yavaşça parlar
+                    twinkle = ",glow 3s ease-in-out infinite"
+                if (r, c) in shine:
+                    col = t["big_shine"] if SHAPES_ARE_STARS else t["shine"]
                 if (r, c) in stars:
                     col = t["star"] if stars[(r, c)] == "center" else t["star_arm"]
                     # her yıldız farklı hızda göz kırpar
