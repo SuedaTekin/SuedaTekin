@@ -1,4 +1,4 @@
-"""Profil için "SUEDA / TEKİN" yazılı katkı grafiği + yılan animasyonu.
+"""Profil için piksel şekilli (balon, kalp, kumanda) katkı grafiği + yılan animasyonu.
 
 GitHub'ın katkı grafiğine benzeyen bir ızgarada yazı yeşil kutucuklarla
 çizilir; mor yılan ızgarayı sırayla dolaşıp kutucukları yer, sonra döngü
@@ -11,8 +11,52 @@ import random
 
 COLS, ROWS = 45, 18
 
-# Profilde yazılan iki satır ve başladıkları ızgara satırı.
+# Profilde yazılan iki satır ve başladıkları ızgara satırı (SHAPES boşsa).
 LINES = [("SUEDA", 1), ("TEKİN", 9)]
+
+# Yazı yerine çizilen piksel şekiller (soldan sağa, dikeyde ortalanır).
+SHAPES = [
+    [  # balon
+        "...#####...",
+        "..#######..",
+        ".#########.",
+        ".#++######.",
+        "###########",
+        "###########",
+        "###########",
+        ".#########.",
+        ".#########.",
+        "..#######..",
+        "...#####...",
+        "....###....",
+        ".....#.....",
+        "......#....",
+        ".....#.....",
+    ],
+    [  # kalp
+        ".###...###.",
+        "#++##.#####",
+        "#+#########",
+        "###########",
+        "###########",
+        ".#########.",
+        "..#######..",
+        "...#####...",
+        "....###....",
+        ".....#.....",
+    ],
+    [  # oyun kumandası
+        "..#########..",
+        ".###########.",
+        "##.######.###",
+        "#...####.#.##",
+        "##.######.###",
+        "#############",
+        "####.....####",
+        ".##.......##.",
+    ],
+]
+SHAPE_GAP = 3
 
 # 7 satırlık büyük piksel yazı tipi (ad için).
 FONT7 = {
@@ -41,6 +85,7 @@ THEMES = {
         "text": ["#26a641", "#39d353", "#2ea043"],
         "snake": "#b45cff",
         "head": "#d6a6ff",
+        "shine": "#aff5b4",
     },
     "light": {
         "empty": "#ebedf0",
@@ -48,6 +93,7 @@ THEMES = {
         "text": ["#30a14e", "#216e39", "#40c463"],
         "snake": "#8a2be2",
         "head": "#b45cff",
+        "shine": "#7ee28f",
     },
 }
 
@@ -78,12 +124,31 @@ def text_cells7(word, top_row, gap=2):
     return cells
 
 
+def shape_cells():
+    width = sum(len(s[0]) for s in SHAPES) + SHAPE_GAP * (len(SHAPES) - 1)
+    x = (COLS - width) // 2
+    cells, shine = set(), set()
+    for s in SHAPES:
+        top = (ROWS - len(s)) // 2
+        for r, line in enumerate(s):
+            for c, v in enumerate(line):
+                if v in "#+":
+                    cells.add((top + r, x + c))
+                if v == "+":  # parlama: açık ton
+                    shine.add((top + r, x + c))
+        x += len(s[0]) + SHAPE_GAP
+    return cells, shine
+
+
 def build(theme_name):
     t = THEMES[theme_name]
     rnd = random.Random(42)
-    letters = set()
-    for word, top in LINES:
-        letters |= text_cells7(word, top)
+    letters, shine = set(), set()
+    if SHAPES:
+        letters, shine = shape_cells()
+    else:
+        for word, top in LINES:
+            letters |= text_cells7(word, top)
     # yılanın yolu: satır satır zikzak
     path = []
     for r in range(ROWS):
@@ -111,6 +176,8 @@ def build(theme_name):
                 i = index[(r, c)]
                 p = 100 * i * STEP / total
                 col = rnd.choice(t["text"])
+                if (r, c) in shine:
+                    col = t["shine"]
                 out.append(
                     f"@keyframes e{i}{{0%,{p:.2f}%{{fill:{col}}}"
                     f"{p + 0.4:.2f}%,98.5%{{fill:{t['empty']}}}100%{{fill:{col}}}}}"
