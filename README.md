@@ -90,6 +90,7 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
 - 🤖 Zorluk eğrisi, her bölümü oynayan bir **bot testiyle** dengelendi
 - 💥 4 güçlendirici, bölüm öncesi **başlangıç güçlendiricileri** ve zincirleme patlayan **bomba balonlar**
 - 🎟️ **Bubble Pass**: aylık sezon, 30 kademe, ücretsiz ve Altın Bilet ödül yolları
+- 🏅 15 başarım rozeti; giriş paneli (e-posta, **Google ile giriş**, misafir)
 - 👥 **Supabase** ile misafir/e-posta hesabı, bulut kayıt, **haftalık lig**, arkadaşlar ve **takımlar** (canlı sohbet, can isteme, haftalık sandık)
 - 🎁 Can sistemi, günlük şans çarkı, 7 günlük giriş serisi, günlük görevler
 - 🔊 Program ile sentezlenmiş, telifsiz ses efektleri ve müzik
