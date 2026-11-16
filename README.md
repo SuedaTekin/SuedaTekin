@@ -311,6 +311,10 @@ toptan satışı yapan kurumsal ürün kataloğu sitesi.
 ---
 
 <p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Outfit&weight=800&size=26&duration=2800&pause=900&color=B45CFF&center=true&vCenter=true&width=720&height=50&lines=Mobil+uygulama+ve+oyun+geli%C5%9Ftiriyorum;Balon+Patlat+%C2%B7+Ferman+%C2%B7+%C3%87e%C5%9Fniciba%C5%9F%C4%B1;Flutter+%C2%B7+React+Native+%C2%B7+Supabase;Fikirden+ma%C4%9Fazaya%2C+u%C3%A7tan+uca" alt="Mobil uygulama ve oyun geliştiriyorum" />
+</p>
+
+<p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/output/github-snake-dark.svg" />
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/output/github-snake.svg" />
