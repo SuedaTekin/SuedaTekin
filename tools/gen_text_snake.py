@@ -29,7 +29,24 @@ FONT = {
 # harf -> (temel harf, üst noktaların sütunları)
 TR = {"İ": ("I", [1]), "Ü": ("U", [0, 3])}
 
-COLS, ROWS = 56, 15
+COLS, ROWS = 45, 18
+
+# Profilde yazılan iki satır ve başladıkları ızgara satırı.
+LINES = [("SUEDA", 1), ("TEKİN", 9)]
+
+# 7 satırlık büyük piksel yazı tipi (ad için).
+FONT7 = {
+    "S": [".####", "#....", "#....", ".###.", "....#", "....#", "####."],
+    "U": ["#...#", "#...#", "#...#", "#...#", "#...#", "#...#", ".###."],
+    "E": ["#####", "#....", "#....", "####.", "#....", "#....", "#####"],
+    "D": ["####.", "#...#", "#...#", "#...#", "#...#", "#...#", "####."],
+    "A": [".###.", "#...#", "#...#", "#####", "#...#", "#...#", "#...#"],
+    "T": ["#####", "..#..", "..#..", "..#..", "..#..", "..#..", "..#.."],
+    "K": ["#...#", "#..#.", "#.#..", "##...", "#.#..", "#..#.", "#...#"],
+    "I": ["#####", "..#..", "..#..", "..#..", "..#..", "..#..", "#####"],
+    "N": ["#...#", "##..#", "#.#.#", "#.#.#", "#..##", "#...#", "#...#"],
+}
+TR7 = {"İ": ("I", [2])}
 CELL, GAP = 12, 3
 PITCH = CELL + GAP
 STEP = 0.028  # yılanın bir kutu ilerleme süresi (sn)
@@ -63,6 +80,32 @@ def glyph(ch):
     return ["." * len(FONT[ch][0])] + FONT[ch]
 
 
+def glyph7(ch, dotted_line):
+    """Büyük harf; satırda noktalı harf varsa hepsine üstte bir satır eklenir."""
+    if ch in TR7:
+        base, dots = TR7[ch]
+        rows = FONT7[base]
+        top = "".join("#" if i in dots else "." for i in range(len(rows[0])))
+        return [top] + rows
+    rows = FONT7[ch]
+    return (["." * len(rows[0])] + rows) if dotted_line else rows
+
+
+def text_cells7(word, top_row, gap=2):
+    dotted = any(c in TR7 for c in word)
+    gl = [glyph7(c, dotted) for c in word]
+    width = sum(len(g[0]) for g in gl) + gap * (len(gl) - 1)
+    x = (COLS - width) // 2
+    cells = set()
+    for g in gl:
+        for r, line in enumerate(g):
+            for c, v in enumerate(line):
+                if v == "#":
+                    cells.add((top_row + r, x + c))
+        x += len(g[0]) + gap
+    return cells
+
+
 def text_cells(word, top_row):
     gl = [glyph(c) for c in word]
     width = sum(len(g[0]) for g in gl) + len(gl) - 1
@@ -80,7 +123,9 @@ def text_cells(word, top_row):
 def build(theme_name):
     t = THEMES[theme_name]
     rnd = random.Random(42)
-    letters = text_cells("BİLGİSAYAR", 1) | text_cells("MÜHENDİSİ", 8)
+    letters = set()
+    for word, top in LINES:
+        letters |= text_cells7(word, top)
     # yılanın yolu: satır satır zikzak
     path = []
     for r in range(ROWS):
