@@ -1,4 +1,4 @@
-"""Profil için "BİLGİSAYAR MÜHENDİSİ" yazılı katkı grafiği + yılan animasyonu.
+"""Profil için "SUEDA / TEKİN" yazılı katkı grafiği + yılan animasyonu.
 
 GitHub'ın katkı grafiğine benzeyen bir ızgarada yazı yeşil kutucuklarla
 çizilir; mor yılan ızgarayı sırayla dolaşıp kutucukları yer, sonra döngü
@@ -8,26 +8,6 @@ baştan başlar. Çıktı: assets/snake-text-dark.svg ve assets/snake-text-light
 """
 import os
 import random
-
-# 5 satırlık piksel yazı tipi ('#' dolu). Türkçe noktalar ayrıca eklenir.
-FONT = {
-    "B": ["###.", "#..#", "###.", "#..#", "###."],
-    "I": ["###", ".#.", ".#.", ".#.", "###"],
-    "L": ["#...", "#...", "#...", "#...", "####"],
-    "G": [".###", "#...", "#.##", "#..#", ".###"],
-    "S": [".###", "#...", ".##.", "...#", "###."],
-    "A": [".##.", "#..#", "####", "#..#", "#..#"],
-    "Y": ["#...#", ".#.#.", "..#..", "..#..", "..#.."],
-    "R": ["###.", "#..#", "###.", "#.#.", "#..#"],
-    "M": ["#...#", "##.##", "#.#.#", "#...#", "#...#"],
-    "U": ["#..#", "#..#", "#..#", "#..#", ".##."],
-    "H": ["#..#", "#..#", "####", "#..#", "#..#"],
-    "E": ["####", "#...", "###.", "#...", "####"],
-    "N": ["#...#", "##..#", "#.#.#", "#..##", "#...#"],
-    "D": ["###.", "#..#", "#..#", "#..#", "###."],
-}
-# harf -> (temel harf, üst noktaların sütunları)
-TR = {"İ": ("I", [1]), "Ü": ("U", [0, 3])}
 
 COLS, ROWS = 45, 18
 
@@ -46,6 +26,7 @@ FONT7 = {
     "I": ["#####", "..#..", "..#..", "..#..", "..#..", "..#..", "#####"],
     "N": ["#...#", "##..#", "#.#.#", "#.#.#", "#..##", "#...#", "#...#"],
 }
+# harf -> (temel harf, üst noktaların sütunları)
 TR7 = {"İ": ("I", [2])}
 CELL, GAP = 12, 3
 PITCH = CELL + GAP
@@ -71,15 +52,6 @@ THEMES = {
 }
 
 
-def glyph(ch):
-    if ch in TR:
-        base, dots = TR[ch]
-        rows = FONT[base]
-        top = "".join("#" if i in dots else "." for i in range(len(rows[0])))
-        return [top] + rows
-    return ["." * len(FONT[ch][0])] + FONT[ch]
-
-
 def glyph7(ch, dotted_line):
     """Büyük harf; satırda noktalı harf varsa hepsine üstte bir satır eklenir."""
     if ch in TR7:
@@ -103,20 +75,6 @@ def text_cells7(word, top_row, gap=2):
                 if v == "#":
                     cells.add((top_row + r, x + c))
         x += len(g[0]) + gap
-    return cells
-
-
-def text_cells(word, top_row):
-    gl = [glyph(c) for c in word]
-    width = sum(len(g[0]) for g in gl) + len(gl) - 1
-    x = (COLS - width) // 2
-    cells = set()
-    for g in gl:
-        for r, line in enumerate(g):
-            for c, v in enumerate(line):
-                if v == "#":
-                    cells.add((top_row + r, x + c))
-        x += len(g[0]) + 1
     return cells
 
 
