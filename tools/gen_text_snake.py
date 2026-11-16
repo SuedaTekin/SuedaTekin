@@ -102,6 +102,9 @@ PITCH = CELL + GAP
 STEP = 0.028  # yılanın bir kutu ilerleme süresi (sn)
 PAUSE = 2.0  # tur sonunda bekleme
 SNAKE_LEN = 7
+# Çıktı dosya adı. GitHub resimleri uzun süre önbellekte tuttuğu için
+# görünüm değişince adı da değiştirip README'yi güncelle.
+OUT_NAME = "snake-stars-pink"
 
 THEMES = {
     "dark": {
@@ -272,6 +275,6 @@ def build(theme_name):
 if __name__ == "__main__":
     root = os.path.join(os.path.dirname(__file__), "..", "assets")
     for name in THEMES:
-        with open(os.path.join(root, f"snake-text-{name}.svg"), "w", encoding="utf-8") as f:
+        with open(os.path.join(root, f"{OUT_NAME}-{name}.svg"), "w", encoding="utf-8") as f:
             f.write(build(name))
     print("ok")

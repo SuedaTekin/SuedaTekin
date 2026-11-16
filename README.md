@@ -316,9 +316,9 @@ toptan satışı yapan kurumsal ürün kataloğu sitesi.
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/main/assets/snake-text-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/main/assets/snake-text-light.svg" />
-    <img alt="Katkı yılanı" src="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/main/assets/snake-text-dark.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/main/assets/snake-stars-pink-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/main/assets/snake-stars-pink-light.svg" />
+    <img alt="Pembe yıldızlar ve yılan" src="https://raw.githubusercontent.com/SuedaTekin/SuedaTekin/main/assets/snake-stars-pink-dark.svg" />
   </picture>
 </p>
 
