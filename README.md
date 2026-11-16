@@ -91,6 +91,7 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
 - 💥 4 güçlendirici, bölüm öncesi **başlangıç güçlendiricileri** ve zincirleme patlayan **bomba balonlar**
 - 🎟️ **Bubble Pass**: aylık sezon, 30 kademe, ücretsiz ve Altın Bilet ödül yolları
 - 🏅 15 başarım rozeti; giriş paneli (e-posta, **Google ile giriş**, misafir)
+- 📅 Günün meydan okuması, altın balonlar, bölge sandıkları; ekran sarsıntısı, övgü yazıları ve zafer konfetisi
 - 👥 **Supabase** ile misafir/e-posta hesabı, bulut kayıt, **haftalık lig**, arkadaşlar ve **takımlar** (canlı sohbet, can isteme, haftalık sandık)
 - 🎁 Can sistemi, günlük şans çarkı, 7 günlük giriş serisi, günlük görevler
 - 🔊 Program ile sentezlenmiş, telifsiz ses efektleri ve müzik
@@ -114,7 +115,7 @@ Nişan al, aynı renkten 3 balonu birleştir, patlat! **50 bölgede 500 bölüm*
   <img src="https://img.shields.io/badge/AdMob-EA4335?logo=googleadmob&logoColor=white" />
   <img src="https://img.shields.io/badge/Google%20Play%20Billing-414141?logo=googleplay&logoColor=white" />
   <a href="https://github.com/SuedaTekin/balon-patlat"><img src="https://img.shields.io/badge/Kaynak%20kod-GitHub-181717?logo=github&logoColor=white" /></a>
-  <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="https://img.shields.io/badge/APK%20indir-1.6.1-FF4E7C?logo=android&logoColor=white" /></a>
+  <a href="https://suedatekin.github.io/balon-patlat-gizlilik/indir/"><img src="https://img.shields.io/badge/APK%20indir-1.7.0-FF4E7C?logo=android&logoColor=white" /></a>
 </p>
 
 ---
